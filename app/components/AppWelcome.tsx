@@ -1,5 +1,7 @@
 'use client'
 
+import { Button } from "@/components/ui/button"
+
 import { useState } from "react";
 
 type AppWelcomeProps = {
@@ -21,6 +23,7 @@ export default function AppWelcome({headTitle, isShow}: AppWelcomeProps) {
         <>
             <h1>{headTitle}</h1>
             <p>{title.toUpperCase()}</p>
+            <Button variant="outline" onClick={handleClick}>Button</Button>
             <button className = "bg-blue-700 p-3 m-3 text-white rounded-lg" onClick = {handleClick}>Press!!</button>
             {currentYear}
             {
