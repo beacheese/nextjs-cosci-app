@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { K2D, Kanit, Sarabun } from "next/font/google";
 import "../globals.css";
-import Navbar01Page from "@/components/navbar-01/navbar-01";
 
 const k2d = K2D({
   subsets: ["thai"],
@@ -10,11 +9,11 @@ const k2d = K2D({
 });
 
 export const metadata: Metadata = {
-  title: "Cosci Shop",
-  description: "Page for Cosci Shop",
+  title: "DashBoard",
+  description: "DashBoard page for Cosci Shop",
 };
 
-export default function RootLayout({
+export default function DashBoardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -24,8 +23,6 @@ export default function RootLayout({
       <body
         className={`${k2d.className}`}
       >
-        <Navbar01Page />
-
         {children}
       </body>
     </html>
