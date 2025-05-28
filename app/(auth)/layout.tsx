@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { K2D, Kanit, Sarabun } from "next/font/google";
 import "../globals.css";
-// import AppNavbar from "./about/AppNavbar";
-import Navbar01Page from "@/components/navbar-01/navbar-01";
 
 const k2d = K2D({
   subsets: ["thai"],
@@ -11,7 +9,7 @@ const k2d = K2D({
 });
 
 export const metadata: Metadata = {
-  title: "Cosci Shop",
+  title: "Login",
   description: "goods selling by cosci students",
 };
 
@@ -25,8 +23,6 @@ export default function RootLayout({
       <body
         className={`${k2d.className}`}
       >
-        <Navbar01Page />
-
         {children}
       </body>
     </html>

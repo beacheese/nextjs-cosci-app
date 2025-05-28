@@ -33,7 +33,11 @@ const Hero02 = () => {
           </div>
         </div>
         <div className="w-full aspect-video bg-accent rounded-xl">
-          <img src="https://panamajack.com/cdn/shop/articles/bigstock-Beach-Chairs-With-Umbrella-And-129286676.jpg?v=1578502258" alt="beach" />
+          <img
+            src="https://panamajack.com/cdn/shop/articles/bigstock-Beach-Chairs-With-Umbrella-And-129286676.jpg?v=1578502258"
+            alt="beach"
+            className="rounded-xl w-full h-full object-cover"  
+          />
         </div>
       </div>
     </div>
