@@ -1,3 +1,4 @@
+import Footer05Page from "@/components/footer-05/footer-05";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -58,6 +59,9 @@ const Product = () => {
           </Card>
         ))}
       </div>
+      <>
+        <Footer05Page />
+      </>
     </div>
   );
 };

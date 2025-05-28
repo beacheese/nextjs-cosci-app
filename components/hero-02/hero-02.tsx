@@ -32,7 +32,9 @@ const Hero02 = () => {
             </Button>
           </div>
         </div>
-        <div className="w-full aspect-video bg-accent rounded-xl" />
+        <div className="w-full aspect-video bg-accent rounded-xl">
+          <img src="https://panamajack.com/cdn/shop/articles/bigstock-Beach-Chairs-With-Umbrella-And-129286676.jpg?v=1578502258" alt="beach" />
+        </div>
       </div>
     </div>
   );
