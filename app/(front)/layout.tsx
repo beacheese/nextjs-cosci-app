@@ -12,7 +12,7 @@ const k2d = K2D({
 
 export const metadata: Metadata = {
   title: "Cosci Shop",
-  description: "goods selling by cosci students",
+  description: "Page for Cosci Shop",
 };
 
 export default function RootLayout({
