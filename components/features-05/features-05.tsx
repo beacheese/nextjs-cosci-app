@@ -24,18 +24,9 @@ const Features05Page = ({courses}: Features05PageProps) => {
                 <p className="mt-1 text-muted-foreground text-[17px]">
                   {course.detail}
                 </p>
-                <p>
-                  {course.date}
-                </p>
-                <p>
-                  {course.view}
-                </p>
-                <p>
-                  {course.picture}
-                </p>
               </CardHeader>
               <CardContent className="mt-auto px-0 pb-0">
-                <div className="bg-muted h-40 ml-6 rounded-tl-xl" />
+                {course.picture}
               </CardContent>
             </Card>
           ))}
