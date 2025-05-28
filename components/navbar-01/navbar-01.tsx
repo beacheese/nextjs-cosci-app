@@ -19,7 +19,7 @@ const Navbar01Page = () => {
               <Link href="/login">Sign In</Link>
             </Button>
             <Button asChild>
-              <Link href="/signup">Started</Link>
+              <Link href="/signup">Sign Up</Link>
             </Button>
 
             {/* Mobile Menu */}
