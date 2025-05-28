@@ -3,7 +3,7 @@ import Footer05Page from "@/components/footer-05/footer-05";
 import { verify } from "crypto";
 
 export default async function About() {
-    const data = await fetch('https://api.codingthailand.com/api/version');
+    const data = await fetch('https://api.codingthailand.com/api/version', {next: {revalidate: 3600}});
     const apiInfo = await data.json();
     return (
         <>
