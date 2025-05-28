@@ -9,11 +9,11 @@ const k2d = K2D({
 });
 
 export const metadata: Metadata = {
-  title: "DashBoard",
+  title: "Dashboard",
   description: "DashBoard page for Cosci Shop",
 };
 
-export default function DashBoardLayout({
+export default function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
