@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import Image from "next/image";
 
 type Features05PageProps = {
   courses: any[]
@@ -26,7 +27,15 @@ const Features05Page = ({courses}: Features05PageProps) => {
                 </p>
               </CardHeader>
               <CardContent className="mt-auto px-0 pb-0">
-                {course.picture}
+                <Image
+                  src={course.picture}
+                  alt={course.detail}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{width: '100%', height: '150px'}}
+                  priority
+                />
               </CardContent>
             </Card>
           ))}
