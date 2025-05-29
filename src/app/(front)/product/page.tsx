@@ -47,7 +47,7 @@ const Product = async () => {
             <CardContent className="py-6">
               <div className="flex items-center gap-3">
                 <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
-                  {i.price}
+                  {i.price} THB
                 </Badge>
                 <span className="font-medium text-xs text-muted-foreground">
                   5 min read
@@ -63,7 +63,7 @@ const Product = async () => {
               </p>
 
               <Button className="mt-6 shadow-none">
-                Read more <ChevronRight />
+                Add to cart <ChevronRight />
               </Button>
             </CardContent>
           </Card>
