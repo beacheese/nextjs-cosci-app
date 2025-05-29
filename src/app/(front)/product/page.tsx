@@ -13,6 +13,7 @@ import db from "@/src/db";
 import { product } from "@/src/db/schema";
 import { desc } from "drizzle-orm";
 import { ChevronRight } from "lucide-react";
+import CartButton from "../components/CartButton";
 
 const Product = async () => {
   const products = await db.query.product.findMany({
@@ -50,21 +51,14 @@ const Product = async () => {
                   {i.price} THB
                 </Badge>
                 <span className="font-medium text-xs text-muted-foreground">
-                  5 min read
+                  Bestseller
                 </span>
               </div>
 
               <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
                 {i.title}
               </h3>
-              <p className="mt-2 text-muted-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-
-              <Button className="mt-6 shadow-none">
-                Add to cart <ChevronRight />
-              </Button>
+              <CartButton product={i} />
             </CardContent>
           </Card>
         ))}

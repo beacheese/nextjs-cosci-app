@@ -7,22 +7,22 @@ import { ChevronRight } from "lucide-react";
 
 export default function CartButton({ product }: any) {
 
-    const addItem = useCartStore((state) => state.addItem);
-
-    const handleAddItem = () => {
-        addItem({
-            productId: product.id,
-            title: product.title,
-            price: product.price,
-            qty: 1
-        });
-    };
+  const addItem = useCartStore((state) => state.addItem);
+  const handleAddItem = () => {
+    addItem({
+        productId: product.id,
+        title: product.title,
+        price: product.price,
+        qty: 1
+    });
+  };
 
   return (
-    <main>
+    <>
       <Button className="mt-6 shadow-none" onClick={handleAddItem}>
-        Add to cart <ChevronRight />
+        Add to cart
+        <ChevronRight />
       </Button>
-    </main>
+    </>
   );
 }
