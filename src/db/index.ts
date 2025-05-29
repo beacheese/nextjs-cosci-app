@@ -32,7 +32,8 @@ const createDb = () => {
     poolInstance = pool; // เก็บ reference
     return drizzle(pool, { 
     //   schema: { ...schema, ...relations }, 
-      mode: "default"
+        schema: { ...schema },
+        mode: "default"
     });
   } catch (error) {
     console.error('Failed to create drizzle instance:', error);
