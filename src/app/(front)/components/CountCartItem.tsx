@@ -7,7 +7,7 @@ import { Badge } from "@/src/components/ui/badge";
 import { ShoppingBasket } from "lucide-react";
 
 export default function CountCartItem() {
-  const totalItems = useCartStore((state) => state.totalItems);
+  const totalItems = useCartStore((state) => state.totalItems());
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
@@ -17,8 +17,8 @@ export default function CountCartItem() {
 
   return (
     <>
-      <span>
-        {totalItems()}
+      <span className="w-4 text-center">
+        {totalItems}
       </span>
     </>
   );

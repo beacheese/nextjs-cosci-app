@@ -26,7 +26,7 @@ const Product = async () => {
       {/* <p>{JSON.stringify(products)}</p> */}
 
       <div className="flex items-end justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Posts</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Product Lists</h2>
         <Select defaultValue="recommended">
           <SelectTrigger className="w-[180px]">
             <SelectValue />
