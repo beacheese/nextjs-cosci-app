@@ -2,9 +2,9 @@
 
 import { Button } from "@/src/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/src/components/ui/table";
-import { product } from "@/src/db/schema";
+// import { product } from "@/src/db/schema";
 import { useCartStore } from "@/src/lib/cart-store";
-import { clear } from "console";
+// import { clear } from "console";
 import { Trash } from "lucide-react";
 import { useRouter } from "next/navigation";
 
