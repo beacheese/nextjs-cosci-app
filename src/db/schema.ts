@@ -1,11 +1,5 @@
-// import { defineConfig } from "drizzle-kit";
-
 import { mysqlTable, primaryKey, varchar, text, timestamp, int, decimal, mysqlEnum, unique, tinyint, boolean } from "drizzle-orm/mysql-core"
 // import { sql } from "drizzle-orm"
-
-// export default defineConfig({
-//   schema: "./src/db/schema.ts",
-// });
 
 export const user = mysqlTable("user", {
 					id: varchar('id', { length: 36 }).primaryKey(),
