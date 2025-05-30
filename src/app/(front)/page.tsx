@@ -1,5 +1,5 @@
-import App from "next/app";
-import AppWelcome from "./components/AppWelcome";
+// import App from "next/app";
+// import AppWelcome from "./components/AppWelcome";
 import Hero02 from "@/src/components/hero-02/hero-02";
 import Footer05Page from "@/src/components/footer-05/footer-05";
 

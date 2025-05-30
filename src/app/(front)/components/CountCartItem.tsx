@@ -3,8 +3,8 @@
 import { useCartStore } from "@/src/lib/cart-store";
 import { useEffect, useState } from "react";
 // import { set } from "react-hook-form";
-import { Badge } from "@/src/components/ui/badge";
-import { ShoppingBasket } from "lucide-react";
+// import { Badge } from "@/src/components/ui/badge";
+// import { ShoppingBasket } from "lucide-react";
 
 export default function CountCartItem() {
   const totalItems = useCartStore((state) => state.totalItems());

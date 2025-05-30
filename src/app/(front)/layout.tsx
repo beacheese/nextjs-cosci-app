@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { K2D, Kanit, Sarabun } from "next/font/google";
+import { K2D } from "next/font/google";
 import "../globals.css";
 import Navbar01Page from "@/src/components/navbar-01/navbar-01";
 

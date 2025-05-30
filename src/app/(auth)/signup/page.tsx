@@ -46,7 +46,7 @@ const SignUp01Page = () => {
             //show loading
             console.log(ctx.body);
         },
-        onSuccess: (ctx) => {
+        onSuccess: () => {
             alert("Success! Direct to home page")
             router.replace("/");
         },

@@ -1,6 +1,6 @@
 import Footer05Page from "@/src/components/footer-05/footer-05";
 import { Badge } from "@/src/components/ui/badge";
-import { Button } from "@/src/components/ui/button";
+// import { Button } from "@/src/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/src/components/ui/card";
 import {
   Select,
@@ -12,7 +12,7 @@ import {
 import db from "@/src/db";
 import { product } from "@/src/db/schema";
 import { desc } from "drizzle-orm";
-import { ChevronRight } from "lucide-react";
+// import { ChevronRight } from "lucide-react";
 import CartButton from "../components/CartButton";
 
 const Product = async () => {
