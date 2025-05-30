@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { Card, CardContent, CardHeader } from "@/src/components/ui/card";
 import Image from "next/image";
 
