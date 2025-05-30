@@ -32,6 +32,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/src/components/ui/sidebar"
+import { authClient } from "../lib/auth-client"
+import { Avatar } from "@radix-ui/react-avatar"
 
 const data = {
   user: {
@@ -151,6 +153,8 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const { data: session } = authClient.useSession();
+
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
@@ -174,7 +178,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+
+        {
+          session && <NavUser user={{
+            name: session.user.name,
+            email: session.user.email,
+            avatar: "/avatars/shadcn.jpg",
+          }} />
+        }
+
       </SidebarFooter>
     </Sidebar>
   )
